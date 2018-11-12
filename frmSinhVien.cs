@@ -20,7 +20,7 @@ namespace QuanLySinhVien
         
         private List<SinhVien> getSinhVien()
         {
-            string cnStr = "Server=DESKTOP-L99J7R8\\SQLEXPRESS;Database = QLHocVien;Integrated security=true";
+            string cnStr = "Server=.;Database = QLHocVien;Integrated security=true";
             SqlConnection cn = new SqlConnection(cnStr);
             string sql = "SELECT *FROM HOCVIEN";
             SqlCommand cmd = new SqlCommand();
@@ -60,7 +60,7 @@ namespace QuanLySinhVien
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            string cnStr = "Server=DESKTOP-L99J7R8\\SQLEXPRESS;Database = QLHocVien;Integrated security=true";
+            string cnStr = "Server=.;Database = QLHocVien;Integrated security=true";
             SqlConnection cn = new SqlConnection(cnStr);
 
             string MaHocVien, TenHocVien, NgaySinh, TinhTrang,Lop;
@@ -91,7 +91,7 @@ namespace QuanLySinhVien
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            string cnStr = "Server=DESKTOP-L99J7R8\\SQLEXPRESS;Database = QLHocVien;Integrated security=true";
+            string cnStr = "Server=.;Database = QLHocVien;Integrated security=true";
             SqlConnection cn = new SqlConnection(cnStr);
 
             string MaHocVien, TenHocVien, NgaySinh, TinhTrang,Lop;
@@ -117,7 +117,7 @@ namespace QuanLySinhVien
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            string cnStr = "Server=DESKTOP-L99J7R8\\SQLEXPRESS;Database = QLHocVien;Integrated security=true";
+            string cnStr = "Server=.;Database = QLHocVien;Integrated security=true";
             SqlConnection cn = new SqlConnection(cnStr);
 
             string MaHocVien, TenHocVien, NgaySinh, TinhTrang,Lop;
